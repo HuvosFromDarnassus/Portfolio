@@ -237,6 +237,13 @@ li {
   border-radius: 4px;
   background-color: #288be6;
   color: #ffffff;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  color: hotpink;
+  border: 1px hotpink solid;
+  padding: 8px 22px;
 }
 
 .page-footer {
