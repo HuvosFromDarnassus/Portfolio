@@ -125,9 +125,34 @@ li {
   }
 }
 
+@-webkit-keyframes flying {
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+@-moz-keyframes flying {
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+@-o-keyframes flying {
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
 .user {
   margin-bottom: -380px;
   animation-name: flying;
+  -webkit-animation-name: flying;
+  -moz-animation-name: flying;
+  -o-animation-name: flying;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
@@ -138,6 +163,13 @@ li {
   transform-origin: right;
   margin-right: 0px;
   animation-name: waving1, flying;
+  -webkit-animation-name: waving1, flying;
+  -moz-animation-name: waving1, flying;
+  -o-animation-name: waving1, flying;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   left: -300px;
@@ -147,6 +179,13 @@ li {
   position: absolute;
   transform-origin: left;
   animation-name: waving2, flying;
+  -webkit-animation-name: waving2, flying;
+  -moz-animation-name: waving2, flying;
+  -o-animation-name: waving2, flying;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   right: -300px;
@@ -242,8 +281,7 @@ li {
 
 .button:hover {
   color: hotpink;
-  border: 1px hotpink solid;
-  padding: 8px 22px;
+  background-color: #000;
 }
 
 .page-footer {
