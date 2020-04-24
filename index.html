@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="adaptive.css" />
     <link rel="stylesheet" href="animate.css" />
-    <script src="wow.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/scroll-script.js"></script>
     <script>
       new WOW().init();
     </script>
@@ -15,7 +17,7 @@
   <body>
     <!--header: Контактная информация-->
     <header class="page-header">
-      <div class="container wow fadeIn" data-wow-delay="1.2s">
+      <div id="home" class="container wow fadeIn" data-wow-delay="1.2s">
         <a class="header-email" href="mailto:danya.tvorun.88@mail.ru"
           >danya.tvorun.88@mail.ru</a
         >
@@ -108,8 +110,9 @@
             width="928"
             height="536"
             alt="Демонстрационный сайт Cuda"
+            style="border: 3px hotpink solid;"
           />
-          <img class="wow fadeInUp" src="files/cuda2.jpg" width="928" height="536" />
+          <img class="wow fadeInUp" src="files/cuda2.jpg" width="928" height="536" style="border: 3px hotpink solid;"/>
         </figure>
 
         <h3 class=" wow fadeInUp" data-wow-delay="0.2s">Демонстрационный сайт команды разработки</h3>
@@ -134,8 +137,9 @@
             width="928"
             height="536"
             alt="Демонстрационный сайт AXIT"
+            style="border: 3px hotpink solid;"
           />
-          <img class="wow fadeInUp" src="files/AXIT-2.jpg" width="928" height="536" />
+          <img class="wow fadeInUp" src="files/AXIT-2.jpg" width="928" height="536" style="border: 3px hotpink solid;"/>
         </figure>
 
         <h3 class=" wow fadeInUp" data-wow-delay="0.2s">Демонстрационный сайт услуг хостинга</h3>
@@ -162,8 +166,9 @@
             width="928"
             height="536"
             alt="Демонстрационный сайт CROWDME"
+            style="border: 3px hotpink solid;"
           />
-          <img class="wow fadeInUp" src="files/CROWDME-2.jpg" width="928" height="536" />
+          <img class="wow fadeInUp" src="files/CROWDME-2.jpg" width="928" height="536" style="border: 3px hotpink solid;"/>
         </figure>
 
         <h3 class=" wow fadeInUp" data-wow-delay="0.2s">Демонстрационный сайт недвижимости</h3>
@@ -181,6 +186,34 @@
       </div>
     </section>
 
+    <div class="container">
+      <h2 class="subheading wow zoomIn" style="text-decoration: underline;">
+        #4
+      </h2>
+      <figure class="project-image">
+        <img
+          class="wow fadeInUp"
+          src="files/Portfolio-game.jpg"
+          width="928"
+          height="536"
+          alt="Игра Portfolio Game"
+          style="border: 3px hotpink solid;"
+        />
+      </figure>
+
+      <h3 class=" wow fadeInUp" data-wow-delay="0.2s">Игра Portfolio Game</h3>
+      <p class="wow fadeIn" data-wow-delay="1s">Игра типа: "Flappy Bird" на чистом JavaScript</p>
+      <p class="wow fadeIn" data-wow-delay="1s"><span style="color: hotpink;">Внимание!</span> Игра работает некорректно на мобильных устройствах</p>
+      <h4 class="wow fadeIn" data-wow-delay="1s">Чему научился:</h4>
+
+      <ul>
+        <li class="wow fadeIn" data-wow-delay="1s">Первый опыт с web-играми</li>
+        <li class="wow fadeIn" data-wow-delay="1s">Анимация JavaScript</li>
+        <li class="wow fadeIn" data-wow-delay="1s">Новые методы JavaScript</li>
+      <a class="button_game wow jackInTheBox" data-wow-delay="1s" href="https://huvosfromdarnassus.github.io/PortfolioGame/">ИГРАТЬ</a>
+    </div>
+  </section>
+
     <!--footer: Контактная информация-->
     <footer class="page-footer">
       <div class="container wow fadeIn" data-wow-delay="1.2s">
@@ -188,6 +221,9 @@
           >danya.tvorun.88@mail.ru</a
         >
         <a class="footer-phone" href="tel:+79148206441">+7(914)820-64-41</a>
+        <nav id="goup" class="wow jackInTheBox">
+          <a class="goup" href="#home">Go Up</a>
+        </nav>
       </div>
     </footer>
   </body>

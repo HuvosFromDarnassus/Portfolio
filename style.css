@@ -284,6 +284,25 @@ li {
   background-color: #000;
 }
 
+.button_game {
+  margin-top: 10px;
+  padding: 6px 20px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: hotpink;
+  color: #ffffff;
+  transition: 0.2s ease;
+}
+
+.button_game:hover {
+  color: #288be6;
+  background-color: #000;
+}
+
+
 .page-footer {
   padding: 40px 0;
   background-image: url(img/bg.png);
@@ -308,4 +327,22 @@ li {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
+}
+
+.goup {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: hotpink;
+  color: #ffffff;
+  transition: 0.4s ease;
+  text-decoration: none;
+}
+
+#goup {
+  margin-top: 20px;
+}
+
+.goup:hover {
+  color: khaki;
+  background-color: #000;
 }
