@@ -1,50 +1,59 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1950px) {
+  .scene {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .heading {
     margin: 0 0 16px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-    font-size: 78px;
+    font-size: 65px;
     line-height: 96px;
     font-weight: 400;
   }
 
-  .wings {
-    position: relative;
-    top: -495px;
-    z-index: -1;
-    display: none;
-  }
-
-  .user {
-    margin-top: -150px;
-    margin-bottom: 0px;
-    width: 250px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
+  .scene {
     position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    right: 0;
+    height: 830px;
+  }
+
+  .scene > div {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 30px;
+    left: 5px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    z-index: -10;
+    right: 5px;
+    bottom: 30px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    z-index: -10;
+    right: 350px;
+    bottom: 10px;
   }
 }
 
@@ -69,15 +78,17 @@
 
   .heading {
     margin: 0 0 16px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 68px;
     line-height: 96px;
     font-weight: 400;
   }
 
+  .scene {
+    display: none;
+  }
+
   .subheading {
     margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 54px;
     line-height: 80px;
     font-weight: 400;
@@ -85,48 +96,10 @@
   }
 
   .user-image {
-    padding-top: 100px;
-    padding-bottom: 140px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 30px;
     margin: 0 0 32px;
     text-align: center;
-  }
-
-  .wings {
-    position: relative;
-    top: -215px;
-    z-index: -1;
-  }
-
-  .user {
-    margin-top: -120px;
-    margin-bottom: -140px;
-    width: 230px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
   }
 
   .level {
@@ -155,41 +128,10 @@
 
   .subheading {
     margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 44px;
     line-height: 80px;
     font-weight: 400;
     text-align: center;
-  }
-
-  .user {
-    margin-top: -120px;
-    margin-bottom: -150px;
-    width: 210px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
   }
 
   .level {
@@ -211,36 +153,6 @@
     padding: 0 6px;
   }
 
-  .user {
-    margin-top: -120px;
-    margin-bottom: -140px;
-    width: 200px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
-  }
-
   .level {
     margin: 4px 0 16px;
     padding: 0;
@@ -254,51 +166,6 @@
 }
 
 @media only screen and (max-width: 730px) {
-  .user-image {
-    padding-top: 50px;
-    padding-bottom: 150px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0 0 32px;
-    text-align: center;
-  }
-
-  .wings {
-    position: relative;
-    top: -110px;
-    z-index: -1;
-  }
-
-  .user {
-    margin-top: -75px;
-    margin-bottom: -160px;
-    width: 185px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
-  }
-
   .level {
     margin: 4px 0 16px;
     padding: 0;
@@ -317,40 +184,35 @@
 }
 
 @media only screen and (max-width: 680px) {
+  body {
+    font-size: 12px;
+  }
+
   .container {
     width: 600px;
     margin: 0 25px;
     padding: 0 6px;
   }
 
-  .user {
-    margin-top: -80px;
-    margin-bottom: -160px;
-    width: 170px;
-    animation-duration: 0s;
+  .heading {
+    margin: 0 0 16px;
+    font-size: 58px;
+    line-height: 96px;
+    font-weight: 400;
   }
 
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
+  .subheading {
+    margin: 0 0 56px;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: 400;
+    text-align: center;
   }
 
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
+  .user-image img {
+    width: 400px;
+    border-radius: 20%;
+    border: 7px dashed #ec5a35;
   }
 
   .level {
@@ -379,65 +241,15 @@
 
   .heading {
     margin: 0 0 16px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 96px;
     font-weight: 400;
   }
 
-  .subheading {
-    margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-    font-size: 34px;
-    line-height: 80px;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  .user-image {
-    padding-top: 50px;
-    padding-bottom: 200px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0 0 32px;
-    text-align: center;
-  }
-
-  .wings {
-    position: relative;
-    top: -13px;
-    z-index: -1;
-    left: 37px;
-  }
-
-  .user {
-    margin-top: -80px;
-    margin-bottom: -210px;
-    width: 150px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
+  .user-image img {
+    width: 380px;
+    border-radius: 20%;
+    border: 7px dashed #ec5a35;
   }
 
   .intro h3,
@@ -466,16 +278,7 @@
 
 @media only screen and (max-width: 530px) {
   body {
-    margin: 0;
-    min-width: 960px;
-    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 32px;
-    color: khaki;
-    background-color: #1d1e20;
-    background-image: url("img/head-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
+    font-size: 10px;
   }
 
   .container {
@@ -486,10 +289,15 @@
 
   .heading {
     margin: 0 0 16px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 50px;
     line-height: 96px;
     font-weight: 400;
+  }
+
+  .user-image img {
+    width: 350px;
+    border-radius: 20%;
+    border: 6px dashed #ec5a35;
   }
 
   .heading + p {
@@ -498,57 +306,10 @@
 
   .subheading {
     margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 28px;
     line-height: 80px;
     font-weight: 400;
     text-align: center;
-  }
-
-  .user-image {
-    padding-top: 50px;
-    padding-bottom: 210px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0 0 32px;
-    text-align: center;
-  }
-
-  .wings {
-    position: relative;
-    top: -13px;
-    z-index: -1;
-    left: 57px;
-  }
-
-  .user {
-    margin-top: -80px;
-    margin-bottom: -220px;
-    width: 130px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
   }
 
   .level {
@@ -586,59 +347,19 @@
     padding: 0 6px;
   }
 
+  .heading {
+    margin: 0 0 16px;
+    font-size: 45px;
+    line-height: 96px;
+    font-weight: 400;
+  }
+
   .subheading {
     margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 30px;
     line-height: 80px;
     font-weight: 400;
     text-align: center;
-  }
-
-  .user-image {
-    padding-top: 50px;
-    padding-bottom: 230px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0 0 32px;
-    text-align: center;
-  }
-
-  .wings {
-    position: relative;
-    top: -10px;
-    z-index: -1;
-    left: 60px;
-  }
-
-  .user {
-    margin-top: -90px;
-    margin-bottom: -250px;
-    width: 120px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
   }
 
   .intro h3,
@@ -662,78 +383,31 @@
 }
 
 @media only screen and (max-width: 420px) {
-  body {
-    margin: 0;
-    min-width: 960px;
-    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 32px;
-    color: khaki;
-    background-color: #1d1e20;
-    background-image: url("img/head-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-  }
-
   .container {
     width: 350px;
     margin: 0 25px;
     padding: 0 6px;
   }
 
+  .heading {
+    margin: 0 0 16px;
+    font-size: 40px;
+    line-height: 96px;
+    font-weight: 400;
+  }
+
   .subheading {
     margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 25px;
     line-height: 80px;
     font-weight: 400;
     text-align: center;
   }
 
-  .user-image {
-    padding-top: 10px;
-    padding-bottom: 240px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0 0 32px;
-    text-align: center;
-  }
-
-  .wings {
-    position: relative;
-    top: 35px;
-    z-index: -1;
-    left: 60px;
-  }
-
-  .user {
-    margin-top: -60px;
-    margin-bottom: -260px;
-    width: 110px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
+  .user-image img {
+    width: 310px;
+    border-radius: 20%;
+    border: 5px dashed #ec5a35;
   }
 
   .intro h3,
@@ -770,7 +444,6 @@
 
   .subheading {
     margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 20px;
     line-height: 80px;
     font-weight: 400;
@@ -780,56 +453,16 @@
 
   .heading {
     margin: 0 0 16px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 38px;
     line-height: 76px;
     font-weight: 400;
   }
 
-  .user-image {
-    padding-top: 0px;
-    padding-bottom: 270px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0 0 32px;
-    text-align: center;
-  }
-
-  .wings {
-    position: relative;
-    top: 105px;
-    z-index: -1;
-    left: 60px;
-  }
-
-  .user {
-    margin-top: 15px;
-    margin-bottom: -300px;
-    width: 90px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
+  .user-image img {
+    margin-top: 25px;
+    width: 270px;
+    border-radius: 20%;
+    border: 5px dashed #ec5a35;
   }
 
   .intro h3,
@@ -858,6 +491,10 @@
 }
 
 @media only screen and (max-width: 350px) {
+  body {
+    font-size: 9px;
+  }
+  
   .container {
     width: 270px;
     margin: 0 30px;
@@ -866,7 +503,6 @@
 
   .subheading {
     margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 20px;
     line-height: 80px;
     font-weight: 400;
@@ -876,60 +512,20 @@
 
   .heading {
     margin: 0 0 16px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 35px;
     line-height: 76px;
     font-weight: 400;
   }
 
+  .user-image img {
+    margin-top: 100px;
+    width: 220px;
+    border-radius: 20%;
+    border: 5px dashed #ec5a35;
+  }
+
   .heading + p {
     font-size: 20px;
-  }
-
-  .user-image {
-    padding-top: 0px;
-    padding-bottom: 290px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0 0 32px;
-    text-align: center;
-  }
-
-  .wings {
-    position: relative;
-    top: 175px;
-    z-index: -1;
-    left: 60px;
-  }
-
-  .user {
-    margin-top: 90px;
-    margin-bottom: -320px;
-    width: 85px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
   }
 
   .intro h3,
@@ -967,7 +563,6 @@
 
   .subheading {
     margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
     font-size: 20px;
     line-height: 80px;
     font-weight: 400;
@@ -977,8 +572,7 @@
 
   .heading {
     margin: 0 0 16px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 76px;
     font-weight: 400;
   }
@@ -987,50 +581,11 @@
     font-size: 20px;
   }
 
-  .user-image {
-    padding-top: 0px;
-    padding-bottom: 310px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0 0 32px;
-    text-align: center;
-  }
-
-  .wings {
-    position: relative;
-    top: 225px;
-    z-index: -1;
-    left: 60px;
-  }
-
-  .user {
-    margin-top: 140px;
-    margin-bottom: -340px;
-    width: 75px;
-    animation-duration: 0s;
-  }
-
-  .wing_left {
-    position: relative;
-    width: 430px;
-    transform-origin: right;
-    margin-right: 0px;
-    animation-name: waving1, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    left: -250px;
-    display: none;
-  }
-
-  .wing_right {
-    position: absolute;
-    width: 435px;
-    transform-origin: left;
-    animation-name: waving2, flying;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    right: -120px;
-    display: none;
+  .user-image img {
+    margin-top: 150px;
+    width: 180px;
+    border-radius: 20%;
+    border: 5px dashed #ec5a35;
   }
 
   .intro h3,

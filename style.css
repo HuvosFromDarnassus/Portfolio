@@ -1,24 +1,67 @@
 body {
   margin: 0;
   min-width: 960px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "PressPlay-regular", "Helvetica", "Arial", sans-serif;
+  font-size: 15px;
   line-height: 32px;
-  color: khaki;
-  background-color: #1d1e20;
-  background-image: url("img/head-bg.jpg");
+  color: white;
+  background-image: url("img/grid-png-43577.png");
+  background-color: #302683;
   background-repeat: no-repeat;
   background-position: top center;
 }
 
+.scene {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  right: 0;
+  height: 830px;
+}
+
+.scene > div {
+  position: absolute;
+  bottom: 0;
+}
+
+.scene > div.html {
+  width: 300px;
+  height: 257px;
+  bottom: 450px;
+  left: 150px;
+  z-index: -10;
+  background: url("img/parallax-html.png") no-repeat center;
+}
+
+.scene div.css {
+  width: 200px;
+  height: 200px;
+  background: url("img/parallax-css.png") no-repeat center;
+  z-index: -10;
+  right: 200px;
+  bottom: 400px;
+}
+
+.scene div.javascript {
+  width: 300px;
+  height: 350px;
+  background: url("img/parallax-js.png") no-repeat center;
+  z-index: -10;
+  right: 800px;
+  bottom: 30px;
+}
+
+
 .skills > h1,
 h3,
 h4 {
-  color: hotpink;
+  color: #ec5a35;
 }
 
 li {
-  color: khaki;
+  color: white;
+  list-style-type: square;
 }
 
 .container {
@@ -40,7 +83,7 @@ li {
 
 .page-header a {
   margin-left: 56px;
-  color: #288be6;
+  color: #4eb543;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
@@ -49,11 +92,15 @@ li {
 .header-email {
   padding-left: 30px;
   background-image: url("img/icon-email-header.svg");
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .header-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-header.svg");
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .hero-image {
@@ -67,8 +114,7 @@ li {
 
 .heading {
   margin: 0 0 16px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 88px;
+  font-size: 75px;
   line-height: 96px;
   font-weight: 400;
 }
@@ -85,116 +131,28 @@ li {
 
 .subheading {
   margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 64px;
+  font-size: 55px;
   line-height: 80px;
   font-weight: 400;
   text-align: center;
 }
 
 .user-image {
-  padding-top: 150px;
-  padding-bottom: -450px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin: 0 0 32px;
   text-align: center;
 }
 
-.wings {
-  position: relative;
-  top: -805px;
-  z-index: -1;
-}
-
-@keyframes flying {
-  50% {
-    transform: translateY(-100px);
-  }
-}
-
-@keyframes waving1 {
-  50% {
-    transform: rotate(-45deg);
-  }
-}
-
-@keyframes waving2 {
-  50% {
-    transform: rotate(45deg);
-  }
-}
-
-@-webkit-keyframes flying {
-  50% {
-    transform: translateY(-100px);
-  }
-}
-
-@-moz-keyframes flying {
-  50% {
-    transform: translateY(-100px);
-  }
-}
-
-@-o-keyframes flying {
-  50% {
-    transform: translateY(-100px);
-  }
-}
-
-.user {
-  margin-bottom: -380px;
-  animation-name: flying;
-  -webkit-animation-name: flying;
-  -moz-animation-name: flying;
-  -o-animation-name: flying;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-
-.wing_left {
-  position: relative;
-
-  transform-origin: right;
-  margin-right: 0px;
-  animation-name: waving1, flying;
-  -webkit-animation-name: waving1, flying;
-  -moz-animation-name: waving1, flying;
-  -o-animation-name: waving1, flying;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  left: -300px;
-}
-
-.wing_right {
-  position: absolute;
-  transform-origin: left;
-  animation-name: waving2, flying;
-  -webkit-animation-name: waving2, flying;
-  -moz-animation-name: waving2, flying;
-  -o-animation-name: waving2, flying;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  right: -300px;
+.user-image img {
+  border-radius: 20%;
+  border: 7px dashed #ec5a35;
 }
 
 .intro h3,
 .portfolio h3 {
   margin: 0 0 12px;
-  font-size: 28px;
+  font-size: 23px;
   line-height: 40px;
   font-weight: 500;
 }
@@ -239,7 +197,7 @@ li {
 .level div {
   margin: 1px;
   height: 12px;
-  background-color: #288be6;
+  background-color: #ec5a35;
   border-radius: 6px;
 }
 
@@ -274,14 +232,14 @@ li {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color: #288be6;
+  background-color: #4eb543;
   color: #ffffff;
   transition: 0.2s ease;
 }
 
 .button:hover {
-  color: hotpink;
-  background-color: #000;
+  background-color: #48a222;
+  box-shadow: 7px 5px 0px #316f1a;
 }
 
 .button_game {
@@ -292,20 +250,19 @@ li {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color: hotpink;
+  background-color: #ec5a35;
   color: #ffffff;
   transition: 0.2s ease;
 }
 
 .button_game:hover {
-  color: #288be6;
-  background-color: #000;
+  background-color: #48a222;
+  box-shadow: 7px 5px 0px #316f1a;
 }
 
 .page-footer {
   padding: 40px 0;
-  background-image: url(img/bg.png);
-  background-repeat: repeat;
+background-color: #4eb543;  background-repeat: repeat;
   opacity: 0.8;
   color: #ffffff;
 }
@@ -331,7 +288,7 @@ li {
 .goup {
   padding: 15px;
   border-radius: 5px;
-  background-color: hotpink;
+  background-color: #ec5a35;
   color: #ffffff;
   transition: 0.4s ease;
   text-decoration: none;
@@ -342,6 +299,6 @@ li {
 }
 
 .goup:hover {
-  color: khaki;
-  background-color: #000;
+  background-color: #48a222;
+  box-shadow: 7px 5px 0px #316f1a;
 }
