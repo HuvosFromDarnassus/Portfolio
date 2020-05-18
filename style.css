@@ -75,6 +75,12 @@ li {
   padding: 32px 0 32px;
 }
 
+.content_clock {
+  font-size: 16px;
+  float: left;
+  color: #4eb543;
+}
+
 .page-header .container,
 .page-footer .container {
   max-width: 1408px;
@@ -82,23 +88,31 @@ li {
 }
 
 .page-header a {
-  margin-left: 56px;
-  color: #4eb543;
+  margin-left: 20px;
+  color: #fff;
+  font-size: smaller;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .header-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
+  padding-left: 34px;
+  background-image: url("img/mail.svg");
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.header-vk {
+  padding-left: 35px;
+  background-image: url("img/vk.svg");
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
 .header-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
+  padding-left: 35px;
+  background-image: url("img/phone.svg");
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -277,11 +291,15 @@ background-color: #4eb543;  background-repeat: repeat;
 
 .footer-email {
   padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-image: url("img/icon-email-footer.svg");
 }
 
 .footer-phone {
   padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-image: url("img/icon-phone-footer.svg");
 }
 

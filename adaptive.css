@@ -287,6 +287,10 @@
     padding: 0 6px;
   }
 
+  .content_clock {
+    font-size: 12px;
+  }
+
   .heading {
     margin: 0 0 16px;
     font-size: 50px;
