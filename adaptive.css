@@ -8,18 +8,48 @@
 }
 
 @media only screen and (max-width: 1760px) {
-  .scene {
-    display: none;
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 20px;
+    left: 150px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.8;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.8;
+    z-index: -10;
+    right: 200px;
+    bottom: 10px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.7;
+    z-index: -10;
+    right: 500px;
+    bottom: -5px;
   }
 
   .menu-btn {
     right: 1px;
-    top: 170px;
+    top: 100px;
+    width: 70px;
+    height: 70px;
   }
 
   .menu a {
     right: 1px;
-    top: 170px;
+    top: 100px;
+    height: 65px;
+    width: 65px;
   }
 }
 
@@ -52,12 +82,14 @@
     left: 5px;
     z-index: -10;
     background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.8;
   }
 
   .scene div.css {
     width: 200px;
     height: 200px;
     background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.8;
     z-index: -10;
     right: 5px;
     bottom: 30px;
@@ -67,6 +99,7 @@
     width: 300px;
     height: 350px;
     background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.7;
     z-index: -10;
     right: 350px;
     bottom: 10px;
@@ -99,8 +132,34 @@
     font-weight: 400;
   }
 
-  .scene {
-    display: none;
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 10px;
+    left: 5px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.7;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.7;
+    z-index: -10;
+    right: 5px;
+    bottom: 10px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.7;
+    z-index: -10;
+    right: 300px;
+    bottom: 10px;
   }
 
   .subheading {
@@ -150,6 +209,50 @@
     text-align: center;
   }
 
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 500px;
+    left: 5px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.5;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.5;
+    z-index: -10;
+    right: 5px;
+    bottom: 480px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.5;
+    z-index: -10;
+    right: 250px;
+    bottom: 10px;
+  }
+
+  .menu-btn {
+    right: 1px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu a {
+    right: 1px;
+    top: 100px;
+    height: 75px;
+    width: 75px;
+  }
+
   .level {
     margin: 4px 0 16px;
     padding: 0;
@@ -169,6 +272,36 @@
     padding: 0 6px;
   }
 
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 400px;
+    left: 5px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.5;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.5;
+    z-index: -10;
+    right: 5px;
+    bottom: 380px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.5;
+    z-index: -10;
+    right: 210px;
+    bottom: 5px;
+  }
+
   .level {
     margin: 4px 0 16px;
     padding: 0;
@@ -182,6 +315,20 @@
 }
 
 @media only screen and (max-width: 730px) {
+  .menu-btn {
+    right: 70px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu a {
+    right: 70px;
+    top: 100px;
+    height: 75px;
+    width: 75px;
+  }
+
   .level {
     margin: 4px 0 16px;
     padding: 0;
@@ -215,6 +362,50 @@
     font-size: 58px;
     line-height: 96px;
     font-weight: 400;
+  }
+
+  .menu-btn {
+    right: 50px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu a {
+    right: 50px;
+    top: 100px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 400px;
+    left: 5px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.5;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.5;
+    z-index: -10;
+    right: 5px;
+    bottom: 380px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.5;
+    z-index: -10;
+    right: 150px;
+    bottom: 1px;
   }
 
   .subheading {
@@ -262,6 +453,50 @@
     font-weight: 400;
   }
 
+  .menu-btn {
+    right: 20px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu a {
+    right: 20px;
+    top: 100px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 400px;
+    left: 5px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.3;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.3;
+    z-index: -10;
+    right: 5px;
+    bottom: 380px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.3;
+    z-index: -10;
+    right: 100px;
+    bottom: 1px;
+  }
+
   .user-image img {
     width: 380px;
     border-radius: 20%;
@@ -301,6 +536,50 @@
     width: 430px;
     margin: 0 25px;
     padding: 0 6px;
+  }
+
+  .menu-btn {
+    right: -15px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu a {
+    right: -15px;
+    top: 100px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 390px;
+    left: 5px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.3;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.3;
+    z-index: -10;
+    right: 5px;
+    bottom: 370px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.3;
+    z-index: -10;
+    right: 80px;
+    bottom: 1px;
   }
 
   .content_clock {
@@ -367,6 +646,50 @@
     padding: 0 6px;
   }
 
+  .menu-btn {
+    right: -18px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu a {
+    right: -18px;
+    top: 100px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 390px;
+    left: -15px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.3;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.3;
+    z-index: -10;
+    right: -15px;
+    bottom: 370px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.3;
+    z-index: -10;
+    right: 40px;
+    bottom: 1px;
+  }
+
   .heading {
     margin: 0 0 16px;
     font-size: 45px;
@@ -414,6 +737,50 @@
     font-size: 40px;
     line-height: 96px;
     font-weight: 400;
+  }
+
+  .menu-btn {
+    right: -5px;
+    top: 110px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu a {
+    right: -5px;
+    top: 110px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 390px;
+    left: -35px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.2;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.2;
+    z-index: -10;
+    right: -35px;
+    bottom: 370px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.2;
+    z-index: -10;
+    right: 40px;
+    bottom: -10px;
   }
 
   .subheading {
@@ -478,6 +845,60 @@
     font-weight: 400;
   }
 
+  .menu-btn {
+    right: -5px;
+    top: 130px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu a {
+    right: -5px;
+    top: 130px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .menu_active a:nth-child(1) {
+    transform: translate(-130%, 0%);
+  }
+  .menu_active a:nth-child(2) {
+    transform: translate(-115%, 120%);
+  }
+  .menu_active a:nth-child(3) {
+    transform: translate(0%, 130%);
+  }
+
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 390px;
+    left: -55px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.2;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.2;
+    z-index: -10;
+    right: -55px;
+    bottom: 370px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.2;
+    z-index: -10;
+    right: 20px;
+    bottom: -10px;
+  }
+
   .user-image img {
     margin-top: 25px;
     width: 270px;
@@ -514,7 +935,7 @@
   body {
     font-size: 9px;
   }
-  
+
   .container {
     width: 270px;
     margin: 0 30px;
@@ -535,6 +956,50 @@
     font-size: 35px;
     line-height: 76px;
     font-weight: 400;
+  }
+
+  .menu-btn {
+    right: -5px;
+    top: 160px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu a {
+    right: -5px;
+    top: 160px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 390px;
+    left: -65px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.2;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.2;
+    z-index: -10;
+    right: -65px;
+    bottom: 370px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.2;
+    z-index: -10;
+    right: 10px;
+    bottom: -5px;
   }
 
   .user-image img {
@@ -599,6 +1064,50 @@
 
   .heading + p {
     font-size: 20px;
+  }
+
+  .menu-btn {
+    right: 5px;
+    top: 160px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu a {
+    right: 5px;
+    top: 160px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .scene > div.html {
+    width: 300px;
+    height: 257px;
+    bottom: 390px;
+    left: -85px;
+    z-index: -10;
+    background: url("img/parallax-html.png") no-repeat center;
+    opacity: 0.2;
+  }
+
+  .scene div.css {
+    width: 200px;
+    height: 200px;
+    background: url("img/parallax-css.png") no-repeat center;
+    opacity: 0.2;
+    z-index: -10;
+    right: -85px;
+    bottom: 370px;
+  }
+
+  .scene div.javascript {
+    width: 300px;
+    height: 350px;
+    background: url("img/parallax-js.png") no-repeat center;
+    opacity: 0.2;
+    z-index: -10;
+    right: -10px;
+    bottom: -5px;
   }
 
   .user-image img {
