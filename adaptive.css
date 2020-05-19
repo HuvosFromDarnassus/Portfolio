@@ -7,6 +7,22 @@
   }
 }
 
+@media only screen and (max-width: 1760px) {
+  .scene {
+    display: none;
+  }
+
+  .menu-btn {
+    right: 1px;
+    top: 170px;
+  }
+
+  .menu a {
+    right: 1px;
+    top: 170px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .heading {
     margin: 0 0 16px;
