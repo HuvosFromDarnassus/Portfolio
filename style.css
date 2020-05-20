@@ -300,6 +300,10 @@ li {
   margin: 0 0 32px;
 }
 
+.intro strong {
+  color: #ec5a35;
+}
+
 .skills-list {
   margin: 0;
   padding: 0;
