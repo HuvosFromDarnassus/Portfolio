@@ -300,8 +300,17 @@ li {
   margin: 0 0 32px;
 }
 
-.intro strong {
+strong {
   color: #ec5a35;
+}
+
+.ref {
+  color: #4eb543;
+  transition: 0.2s;
+}
+
+.ref:hover {
+  color: #fff;
 }
 
 .skills-list {
@@ -325,6 +334,16 @@ li {
 
 .skill-js {
   background-image: url("img/icon-js.png");
+}
+
+.skill-php {
+  background-image: url("img/icon-php.svg");
+}
+
+.skill-php p {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
 }
 
 .level {
